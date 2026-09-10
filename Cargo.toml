@@ -3,7 +3,7 @@ name = "neondeck"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.85"
-license = "MIT"
+license = "Apache-2.0"
 description = "A terminal fleet report for every repo on the grid"
 
 [dependencies]
