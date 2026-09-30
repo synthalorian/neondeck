@@ -76,9 +76,7 @@ EXAMPLES:
 EXIT CODES:
     0  success
     1  runtime error (bad path, unreadable directory, write failure)
-    2  usage error (missing/unknown arguments)
-
-Made by synth"
+    2  usage error (missing/unknown arguments)"
     );
 }
 
@@ -892,7 +890,6 @@ pub fn render_markdown(root: &Path, repos: &[RepoInfo], todos: bool) -> String {
     }
 
     s.push_str(&format!("\n**{} repositories**\n", repos.len()));
-    s.push_str("\n---\nMade by synth\n");
     s
 }
 
@@ -1154,7 +1151,6 @@ mod tests {
         assert!(md.contains("| Repository | Branch |"));
         assert!(md.contains("| demo |"));
         assert!(md.contains("**1 repositories**"));
-        assert!(md.contains("Made by synth"));
     }
 
     #[test]
