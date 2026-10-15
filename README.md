@@ -1,3 +1,5 @@
+![neondeck](.github/preview.png)
+
 # neondeck
 
 A terminal fleet report for every repo on the grid.
